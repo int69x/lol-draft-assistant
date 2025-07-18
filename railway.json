@@ -1,0 +1,12 @@
+{
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "",
+    "watchPatterns": ["backend/**/*"]
+  },
+  "deploy": {
+    "startCommand": "uvicorn main:app --host 0.0.0.0 --port 8000",
+    "restartPolicyType": "ON_FAILURE",
+    "rootDirectory": "backend"
+  }
+}
